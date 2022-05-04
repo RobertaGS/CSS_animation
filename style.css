@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+#hero{
+    background-image: url(./1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    
+}
+#hero::after{
+    content: '';
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(16, 15, 15, 0.6);
+    z-index: 2;
+    
+    /* uzdeti juodos spalvos sluoksni 0.6 permatomumo */
+}
+
+h1{
+    position:absolute;
+    font-size: 60px;
+    font-weight: 600;
+    color: rgba(202, 16, 208, 0.895);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(30, 22, 22, 0.6);
+
+  }
+  .heart{
+      height: 100px;
+      width: 100px;
+      background-color: rgb(36, 6, 63);
+      position: relative;
+      transform:rotate(-45deg);
+      
+}
+
+  .heart:after{
+      content: '';
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      top: -20px;
+      left: -100px;
+      background:rgba(202, 16, 208, 0.895);
+
+  }
